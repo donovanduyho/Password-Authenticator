@@ -14,7 +14,6 @@ start = timeit.default_timer()
 
 print("A strong and secure password consists of a combination of special characters, lowercase and uppercase characters, numbers, and a minimum of ten total characters.")
 
-
 while True:
     userInput = input("Generate strong and secure password? (Y/N): ")
     userInput = userInput.upper()
@@ -43,6 +42,7 @@ while True:
     runAgain = runAgain.upper()
     if(runAgain != "Y"):
         break
+    
 #(math.trunc) rounds a decimal to nearest second/integer 
 #timeit.default_timer() takes the current time 
 stop = timeit.default_timer() 
