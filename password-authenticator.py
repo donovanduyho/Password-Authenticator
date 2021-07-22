@@ -1,9 +1,9 @@
-#NOTES 
-#.join combines the characters without commas and ""
-#The join() method takes all items in an iterable and joins them into one string. A string must be specified as the separator
-#The string.ascii_lowercase, string.ascii_uppercase, string.digits, string.punctuation are pre-existing lists for alphabetical letters, numbers, and punctuations 
-#import timeit inserts a timer
-#import string for ascii
+# NOTES 
+# The .join command combines the characters without commas and ""
+# The join() method takes all items in an iterable and joins them into one string. A string must be specified as the separator
+# The string.ascii_lowercase, string.ascii_uppercase, string.digits, string.punctuation are pre-existing lists for alphabetical letters, numbers, and punctuations 
+# import timeit inserts a timer
+# import string for ascii
 
 import string
 import random
@@ -20,19 +20,19 @@ while True:
     if(userInput != "Y"): 
         break
     else:
-        #Takes in max of 6 characters and stores lowercase letters into variable chars 
+        # Takes in max of 6 characters and stores lowercase letters into variable chars 
         def lowercaseGenerator(size = 6, chars = string.ascii_lowercase): 
             return ''.join(random.choice(chars) for _ in range(size))
 
-        #Takes one character and stores uppercase letters into variable chars
+        # Takes one character and stores uppercase letters into variable chars
         def uppercaseGenerator(chars = string.ascii_uppercase):
             return ''.join(random.choice(chars))
 
-        #Takes in max of 2 characters and stores numbers into variable chars
+        # Takes in max of 2 characters and stores numbers into variable chars
         def numberGenerator(size = 2, chars = string.digits):
             return ''.join(random.choice(chars) for _ in range(size))
             
-        #Takes one character and stores punctuation into variable chars
+        # Takes one character and stores punctuation into variable chars
         def specialCharGenerator(chars = string.punctuation):
             return ''.join(random.choice(chars))
             
@@ -43,8 +43,8 @@ while True:
     if(runAgain != "Y"):
         break
     
-#(math.trunc) rounds a decimal to nearest second/integer 
-#timeit.default_timer() takes the current time 
+# The math.trunc method rounds a decimal to nearest second/integer 
+# The timeit.default_timer() takes the current time 
 stop = timeit.default_timer() 
 print("[ Approximate Execution Time (Seconds): ", math.trunc(stop - start), " ]")
 
