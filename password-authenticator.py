@@ -2,6 +2,8 @@
 #.join combines the characters without commas and ""
 #The join() method takes all items in an iterable and joins them into one string. A string must be specified as the separator
 #The string.ascii_lowercase, string.ascii_uppercase, string.digits, string.punctuation are pre-existing lists for alphabetical letters, numbers, and punctuations 
+#import timeit inserts a timer
+#import string for ascii
 
 import string
 import random
@@ -41,7 +43,8 @@ while True:
     runAgain = runAgain.upper()
     if(runAgain != "Y"):
         break
-
+#(math.trunc) rounds a decimal to nearest second/integer 
+#timeit.default_timer() takes the current time 
 stop = timeit.default_timer() 
 print("[ Approximate Execution Time (Seconds): ", math.trunc(stop - start), " ]")
 
