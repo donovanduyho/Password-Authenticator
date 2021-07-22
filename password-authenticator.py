@@ -5,6 +5,10 @@
 
 import string
 import random
+import timeit
+import math
+
+start = timeit.default_timer()
 
 print("A strong and secure password consists of a combination of special characters, lowercase and uppercase characters, numbers, and a minimum of ten total characters.")
 
@@ -38,5 +42,8 @@ while True:
     if(runAgain != "Y"):
         break
 
-#rhydham
+stop = timeit.default_timer() 
+print("[ Approximate Execution Time (Seconds): ", math.trunc(stop - start), " ]")
+
+
 
